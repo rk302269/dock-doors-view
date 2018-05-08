@@ -1,0 +1,22 @@
+#doors {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+#doors td, #doors th {
+    border: 1px solid #ddd;
+    padding: 2px;
+    height: 20xpx;
+}
+
+#doors tr:nth-child(even){background-color: #f2f2f2;}
+
+#doors tr:hover {background-color: #ddd;}
+
+#doors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
