@@ -5,6 +5,10 @@ class DoorForm extends Component {
 constructor(props) {
     super(props);
     this.state= {doorName: '',
+                 newDoor : {
+                     doorId : '',
+                     doorName : ''
+                 }       
                 };
     
 
@@ -16,26 +20,21 @@ handleChange(event) {
 }
 
 handleSubmit(event) {
-    alert('New Door Entry Submitted with Door Name : '+this.state.doorName);
     event.preventDefault();
     const restUri = 'http://localhost:8080/api/addDoor';
     const reqBody = this.state;
    
     axios.post(restUri, reqBody)
     .then( response => {
-        const newDoor = response.data
-        if(newDoor.doorName===null || newDoor.doorName===undefined)
-        {
-            window.alert("Invalid Door Name")
-        } else {
-            window.alert("Created a new Door Entry")
-        }
+         this.newDoor = response.data
     })
  
 }
 
     render() {
         return (
+            <div>
+                <div>
             <form onSubmit={this.handleSubmit}>
         <label>
           Door Name:
@@ -43,6 +42,9 @@ handleSubmit(event) {
         </label>
         <input type="submit" value="Submit" />
       </form>
+      </div>
+      
+      </div>
         );
     }
 }

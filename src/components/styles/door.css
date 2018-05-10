@@ -6,7 +6,7 @@
 #doors td, #doors th {
     border: 1px solid #ddd;
     padding: 2px;
-    height: 20xpx;
+    height: 10xpx;
 }
 
 #doors tr:nth-child(even){background-color: #f2f2f2;}

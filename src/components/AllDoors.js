@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import '/Users/thduser/ramworkspace/bootcamp-casestudy-view/src/styles/door.css'
+import './styles/door.css'
 
 
 
@@ -36,9 +36,8 @@ class AllDoors extends Component {
                         </tr>
                                 {this.state.doors.map((door,i) => {
                                     return (<tr>
-                                                <td><h3>{door.doorId}</h3></td>
-                                                <td><h3>{door.doorName}</h3></td>
-                                                
+                                                <td>{door.doorId}</td>
+                                                <td>{door.doorName}</td>
                                             </tr>)
                                 })
                                 }  
