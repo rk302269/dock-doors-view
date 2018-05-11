@@ -7,6 +7,7 @@
     border: 1px solid #ddd;
     padding: 2px;
     height: 10xpx;
+    text-align: center;
 }
 
 #doors tr:nth-child(even){background-color: #f2f2f2;}

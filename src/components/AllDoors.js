@@ -26,7 +26,10 @@ class AllDoors extends Component {
         
         return (
             <div>
-             
+             <div>
+             <h1 className="App-title">List of all Dock Doors</h1>
+                </div>
+                <div>
                 <table id="doors" align="center">
                     <tbody>
                         <tr>
@@ -43,6 +46,7 @@ class AllDoors extends Component {
                                 }  
                     </tbody>   
                 </table>
+                </div>
             </div>
         );
     }

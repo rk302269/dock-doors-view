@@ -28,12 +28,18 @@ handleSubmit(event) {
     .then( response => {
          this.newDoor = response.data
     })
+
+    window.alert('Dock Door successfully created');
+    
  
 }
 
     render() {
         return (
             <div>
+                <div>
+                <h1 className="App-title">Dock Door Form</h1>
+                </div>
                 <div>
             <form onSubmit={this.handleSubmit}>
         <label>

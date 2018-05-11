@@ -7,21 +7,23 @@ import DoorForm from './components/DoorForm'
 import AllDoors from './components/AllDoors'
 class App extends Component {
 
+  
   render() {
     return (
       <div className="App">
-        
+     <div align="left">
   <NavBar/>
-
-  <Router>
-  <Switch>
+  </div>
+  <div align="center">
+      <Router>
+        <Switch>
   <Route exact path="/" component={Main}/>
   <Route exact path="/dockDoors" component={DockDoor}/>
   <Route exact path="/getAllDoors" component={AllDoors}/>
   <Route exact path="/addNewDoor" component={DoorForm}/>
   </Switch>
   </Router>
-        
+  </div>
       </div>
 
     );
